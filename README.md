@@ -13,7 +13,12 @@
 5. Share the project to GitHub
 
 6. Settings → Secrets and variables → Actions 
-    Add the two repository secrets. On the page in your screenshot, click the green New repository secret button, twice:
+    First, get the arns with these canonical commands:
+    aws iam get-role --role-name gha-tf-plan  --query 'Role.Arn' --output text
+    aws iam get-role --role-name gha-tf-apply --query 'Role.Arn' --output text
+
+    Add the two repository secrets. On the page in your screenshot, click the green New repository secret button for each (ensure the correct arn is created under correct name!):
+
 
     Name: 
         AWS_PLAN_ROLE_ARN 
