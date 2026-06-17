@@ -1,2 +1,2 @@
-github_owner = "GITHUB_USERNAME"
-github_repo  = "REPO_NAME"
+github_owner = "vivekanandpv"
+github_repo  = "terraform-multi-environment-multi-state-gha-enabled"
