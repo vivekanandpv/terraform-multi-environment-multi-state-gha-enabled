@@ -6,5 +6,6 @@ availability_zone  = "eu-central-1a"
 instance_type      = "t2.micro"
 ingress_cidrs      = ["0.0.0.0/0"]
 tags = {
-  Owner = "vivek"
+  Owner      = "vivek"
+  Additional = "foo"
 }
